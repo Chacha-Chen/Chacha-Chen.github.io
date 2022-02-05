@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog</title>
+    <link>https://chacha-chen.github.io/blog/posts/</link>
+    <description>Recent content on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2020, Jane Doe.</copyright>
+    <lastBuildDate>Tue, 26 Mar 2019 08:47:11 +0100</lastBuildDate><atom:link href="https://chacha-chen.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://chacha-chen.github.io/blog/posts/commands/</link>
+      <pubDate>Tue, 26 Mar 2019 08:47:11 +0100</pubDate>
+      
+      <guid>https://chacha-chen.github.io/blog/posts/commands/</guid>
+      <description>Vscode commands command K + V &amp;ndash;&amp;gt; vscode preview
+Hugo commands: hugo new posts/my-first-post.md
+hugo server -D
+hugo -D
+Output will be in ./public/ directory by default (-d/&amp;ndash;destination flag to change it, or set publishdir in the config file).</description>
+    </item>
+    
+  </channel>
+</rss>
