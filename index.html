@@ -1,11 +1,17 @@
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/style.css">
 
 <head>
     <style>
     body {
-  font-family: Arial, Helvetica, sans-serif;
+/*  font-family: Arial, Helvetica, sans-serif;*/
   font-size: 20px;
     }
 
@@ -52,7 +58,7 @@
 </head>
 
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
 <script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -74,55 +80,29 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-    <div id="layout-menu">
-        <a href="#bio">Bio</a>
-        <a href="#Education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#service">Service</a>
-        <a href="./chacha_CV.pdf">CV</a>
-    </div>
-</nav>
-
-
+<!-- <nav class="navbar fixed-top" style="background-color: white;">
+    <div id="layout-menu" style="background-color: white">
+        <a href="#bio">Bio</a> -->
+        <!-- <a href="#Education">Education</a> -->
+        <!-- <a href="#experience">Experience</a> -->
+        <!-- <a href="#publications">[Papers]</a> -->
+        <!-- <a href="#teaching">Teaching</a> -->
+        <!-- <a href="#service">Service</a> -->
+        <!-- <a href="./chacha_CV.pdf">[CV]</a> -->
+    <!-- </div>  -->
+<!-- </nav> --> 
 <div id="layout-content" style="margin-top:25px">
 
 <table>
 	<tbody>
 		<tr>
-			<td width="650">
-				<div id="toptitle">					
-					<h1>Chacha Chen<h1>
-                    <h1>陈诧姹<h1>
-				</div>
-				<!-- <h4>PhD student in Computer Science </h4> -->
-				<p>
-<!--                     <i>Master in Informatics</i> </br>
- -->                   
- PhD student  </br></br>
-<a href="https://chicagohai.github.io/" class="docs-creator">Chicago Human+AI lab</a></br>
-					Department of Computer Science </br>
-                    University of Chicago </br>
-      <!--               College of Information Sciences and Technology </br>
-                    Pennsylvania State University </br> -->
-					</br>
-					Email: <a href="mailto:chacha@uchicago.edu">chacha@uchicago.edu</a></br>
-                    </br>
-                     <!-- <a href="./chacha_CV.pdf">Curriculum Vitae (CV)</a></br></br> -->
-
-<!--             <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">Google Scholar</a>
- --><!--             <a href="https://twitter.com/chachaachen"><img src="pic/23681.png" height=18px> 
- -->                     <!-- I'm actively looking for 2021 Fall PhD programs and 2021 spring internships. -->
-				</p>
-			</td>
-			<td style="text-align: center;">
+			<td width="330" style="text-align: center;">
                 <!-- <div class="effect">
                 <img class="image" src="pic/profile.JPG" />
                 <img class="image hover" src="pic/cv.png" />
                 </div> -->
-                <img class="img-circle" alt="Chacha Chen, with long hair" src="pic/profile.png" onMouseOver="this.src='pic/logo.png'" onMouseOut="this.src='pic/profile.png'" border="0" height="240px" ></br></br>
+                <!-- <img class="img-circle" alt="Chacha Chen, with long hair" src="pic/profile.png" onMouseOver="this.src='pic/logo.png'" onMouseOut="this.src='pic/profile.png'" border="0" height="240px" ></br></br> -->
+                 <img class="image" alt="Chacha Chen, smirking" src="pic/profile.JPG" onMouseOver="this.src='pic/logo_1.png'" onMouseOut="this.src='pic/profile.JPG'" border="0" height="300px" ></br>
                 <!-- <a href="https://twitter.com/chachaachen"><i class="fa fa-google"></i>oogle Scholar</a>  -->
 
           <!--   <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en"><img src="pic/GoogleScholar.png" height=18px>  
@@ -142,15 +122,40 @@ function topFunction() {
  -->
 				<!-- <img class="img-circle" src="pic/profile.JPG" border="0" width="220px"></br> -->
 			</td>
+      <td width="650">
+        <div id="toptitle">         
+          <h1>Chacha Chen<h1>
+                    <h1>陈诧姹<h1>
+        </div>
+        <!-- <h4>PhD student in Computer Science </h4> -->
+        <p>
+               
+        PhD student  </br>
+<a href="https://chicagohai.github.io/" class="docs-creator">Chicago Human+AI lab</a></br>
+          Department of Computer Science, University of Chicago</br>
+                    <!-- University of Chicago </br> -->
+      <!--               College of Information Sciences and Technology </br>
+                    Pennsylvania State University </br> -->
+          <!-- </br> -->
+          Email: <a href="mailto:chacha@uchicago.edu">chacha@uchicago.edu</a></br>
+                    </br>
+                     <!-- <a href="./chacha_CV.pdf">Curriculum Vitae (CV)</a></br></br> -->
+
+<!--             <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">Google Scholar</a>
+ --><!--             <a href="https://twitter.com/chachaachen"><img src="pic/23681.png" height=18px> 
+ -->                     <!-- I'm actively looking for 2021 Fall PhD programs and 2021 spring internships. -->
+        </p>
+      </td>
 		<tr>
 	</tbody>
 </table>
 
 <br>
 
-<div id="bio">
-<h2>Bio</h2>
-<p style="text-align:justify; text-justify:inter-ideograph;"> I am a PhD student in Computer Science at UChicago, advised by <a href="https://chenhaot.com/">Chenhao Tan</a>.
+<!-- <div id="bio"> -->
+<!-- <h2>Bio</h2> -->
+<p style="text-align:justify; text-justify:inter-ideograph;"> I am a PhD student in Computer Science at UChicago, advised by <a href="https://chenhaot.com/">Chenhao Tan</a>. My research interests focus on human-centered AI, at the intersection of machine learning, computational social science, and human-computer interaction. 
+
 
 <!-- Master student in the <a href="https://ist.psu.edu/"> College of Information Sciences and Technology</a> at <a href = "https://www.psu.edu/"> The Pennsylvania State University</a>.
 I obtained my B.Eng. at <a href="http://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. I also visited <a href="https://www.tum.de/"> Technische Universität München</a> as an exchange student. 
@@ -163,9 +168,9 @@ Currently I am working with Professor <a href="https://crowd.ist.psu.edu/index.h
 <!-- <br><br> -->
 
 <!-- <h3>Research Interests</h3> -->
-<p style="text-align:justify; text-justify:inter-ideograph;"> 
+<!-- <p style="text-align:justify; text-justify:inter-ideograph;"> 
 My research interests focus on human-centered AI, at the intersection of machine learning, computational social science, and human-computer interaction. 
-
+ -->
 <!-- <p><img src="pic/chai_ppl.png" height=200px></p> -->
 
 <!-- My goal and passion lie in the following three aspects: <br> -->
@@ -195,13 +200,13 @@ My research interests focus on human-centered AI, at the intersection of machine
     </li>
 </ul> -->
 
-</div>
+<!-- </div> -->
 
 
 <br>
 <!-- <br> -->
 
-<div id="Education">
+<!-- <div id="Education">
 <h2>Education</h2>
 
 <table id="Education" width="100%">
@@ -254,16 +259,16 @@ My research interests focus on human-centered AI, at the intersection of machine
 
 
 
-<br>
+<br> -->
 
 <div id="publications">
-<h2>Publications</h2>
+<h2>Papers</h2>
 
 
-<h3>Preprints</h3>
+<!-- <h3>Preprints</h3>
 <table id="tbPublications" width="100%">
 
-</table>
+</table> -->
 
 <h3>Conference Papers</h3>
 
@@ -546,7 +551,7 @@ and Physically Structured Learning <b>(IIBPS, NeurIPS 2020)</b> <br>
 </div>
 <br>
 
-<div id='teaching'>
+<!-- <div id='teaching'>
 <h2>Teaching Experience</h2>
 <table id="tbTeaching" border="0" width="100%">
     <tbody>
@@ -557,7 +562,7 @@ and Physically Structured Learning <b>(IIBPS, NeurIPS 2020)</b> <br>
         </tr>
     </tbody>
 </table>
-</div>
+</div> -->
 
 <!-- <br><br> -->
 
@@ -578,8 +583,8 @@ and Physically Structured Learning <b>(IIBPS, NeurIPS 2020)</b> <br>
 </div>
  -->
 
-<br><br>
-<div id="service">
+
+<!-- <div id="service">
 <h2>Service</h2>
 <li>
     <b>Program Committee: </b> 
@@ -593,7 +598,7 @@ and Physically Structured Learning <b>(IIBPS, NeurIPS 2020)</b> <br>
  AAAI 2020, KDD 2020, CIKM 2020, TITS 2021
     <p style="margin-top:3px">
     </p>        
-</li>
+</li> -->
 
 <!-- 	&nbsp<a href="https://www.computer.org/web/tvcg">TVCG</a>,
 	&nbsp<a href="http://www.signalprocessingsociety.org/publications/periodicals/image-processing/">TIP</a>,
@@ -601,21 +606,21 @@ and Physically Structured Learning <b>(IIBPS, NeurIPS 2020)</b> <br>
 	&nbsp<a href="http://link.springer.com/journal/371">TVC</a>,
 	&nbsp<a href="">CAD</a>,
 	&nbsp<a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">TMM</a> -->
-	<p style="margin-top:3px">
+<!-- 	<p style="margin-top:3px">
 	</p>		
 </li>
-
+</div> -->
 
 <!-- <div id="footer">
 	<div id="footer-text"></div>
 
 </div> -->
-<br><br>
+<!-- <br><br> -->
 <div id="service">
 <h2>Misc.</h2>
 I have a <a href="blog/">blog</a> that I update once in several hundreds years.
 
-</div>
+
 
 </div>
 </body>
