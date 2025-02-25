@@ -24,6 +24,33 @@
       }
       
       /* Rest of your styles... */
+      .publication-section {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+/*            background: #f9f9f9;*/
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .publication-item {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.3rem;
+        }
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+        .publication-title {
+            font-weight: bold;
+            margin-bottom: 0.2rem;
+        }
+        .publication-section h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+        .publication-item p {
+            margin: 0.2rem 0;
+        }
       .profile-section {
         display: flex;
         align-items: flex-start;
@@ -69,12 +96,12 @@
       }
       
       /* Simplified styles to match Victor's cleaner look */
-      .publication-item {
+/*      .publication-item {
         margin-bottom: 1.5rem;
       }
       .publication-title {
         font-weight: 600;
-      }
+      }*/
       .experience-item {
         display: flex;
         justify-content: space-between;
@@ -143,109 +170,168 @@
             <!-- Research Focus Section -->
             <h2 class="section-title">Research Focus</h2>
             <ul class="passion-list">
-                <li>Multimodal Large Language Model (LLM) Evaluation and Post-training for Healthcare</li>
-                <li>Human-AI Collaboration, specifically human-centered explanations and human-AI decision making</li>
+                <li>Understanding and improving LLMs for specialized tasks such as radiology and knowledge-intensive tasks</li>
+                <!-- Multimodal Large Language Model (LLM) Evaluation and Post-training for Healthcare</li> -->
+                <li>Human-AI collaboration</li>
             </ul>
-            <p>I am passionate about putting humans at the center of AI development, including how to understand the process of human-AI interaction and how we can better build/deploy AI tools that can actually be useful in real-world settings, especially in medical contexts.</p>
+            <p>I am passionate about putting humans at the center of AI development, including how to understand the process of human-AI interaction and how we can better build/deploy AI tools that can actually be useful in real-world settings.</p>
+            <!-- , especially in medical contexts.</p> -->
 
-            <!-- Publications Section -->
-            <h2 class="section-title">Selected Publications <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">(Full List)</a></h2>
-            <div class="publications">
-                <!-- Publication items here, styled with publication-item class -->
+            
+        <br>
+
+        <div class="container">
+            <h1 class="title">Selected Publications <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">(Full List)</a></h1>
+
+            <div class="publication-section">
+                <h2 class="subtitle">🤓 LLMs in Expert Domains</h2>
+                <div class="publication-item">
+                    <span class="publication-title">GPT-4V Cannot Generate Radiology Report Yet</span><br>
+                    Yuyang Jiang*, <b>Chacha Chen*</b>, Dang Nguyen, Benjamin M. Mervak, Chenhao Tan.<br>
+                    <i><b>ML4H 2024, NAACL 2025</b>.</i> <a href="https://www.arxiv.org/abs/2407.12176">[Paper]</a> 
+                </div>
+                <div class="publication-item">
+                    <span class="publication-title">The Use of Generative Search Engines for Knowledge Work and Complex Tasks</span><br>
+                    Siddharth Suri, Scott Counts, Leijie Wang, <b>Chacha Chen</b>, Mengting Wan, Tara Safavi, Jennifer Neville, Chirag Shah, Ryen W. White, Reid Andersen, Georg Buscher, Sathish Manivannan, Nagu Rangan, Longqi Yang.<br>
+                    <i>An empirical analysis of large-scale user interactions with Bing Chat, a GPT-4 backed generative search engine.</i><br>
+                    <a href="https://arxiv.org/abs/2404.04268">[Preprint]</a>
+                </div>
             </div>
 
-            <!-- Experience Section -->
-<!-- <h2>Selected Papers, <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">Full List</a>*</h2> -->
-
-<!-- <h3>Preprints</h3>
-<table id="tbPublications" width="100%">
-
-</table> -->
-
-<!-- <h3>Conference Papers</h3> -->
-
-<table id="tbPublications" width="100%">
-
-      <tr>
-        <td width="100%">
-        <p>
-        <b>Human-AI Decision Making with Domain Experts: A Case Study on AI-Assisted Prostate Cancer MRI Diagnosis</b> <br>
-        <b>Chacha Chen</b>, Han Liu, Jiamin Yang, Benjamin M. Mervak, Bora Kalaycioglu, Grace Lee, Emre Cakmakli, Matteo Bonatti, Sridhar Pudu, Osman Kahraman, Gul Gizem Pamuk, Aytekin Oto, Aritrick Chatterjee, Chenhao Tan.<br>
-        <!-- In Proceedings of <b>[Add conference or journal here]</b><br> -->
-        [<a href="https://arxiv.org/abs/2502.03482">Preprint</a>] 
-
-        <!-- <i>Preprint.</i><br> -->
-        <!-- [<a href="https://www.arxiv.org/abs/XXXX.XXXXX">Paper</a>]  -->
-        </p>
-        </td>
-    </tr>
-
-    
-    <tr>
-        <td width="100%">
-        <p>
-        <b>GPT-4V Cannot Generate Radiology Report Yet</b> <br>
-        Yuyang Jiang*, <b>Chacha Chen*</b>, Dang Nguyen, Benjamin M. Mervak, Chenhao Tan.<br>
-         <!-- In Proceedings of the 11th International Conference on Learning Representations <b>(ICLR 2023)</b><br> -->
-        <i>Findings of Machine Learning for Health <b>(ML4H 2024)</b> and findings of <b>NAACL 2025</b>.
-        </i><br>
-        [<a href="https://www.arxiv.org/abs/2407.12176">Paper</a>]
-        [<a href="papers/rrp_eval.pdf">Slides</a>] 
-        </p>
-        </td>
-        </tr>
-
-    <tr>
-        <td width="100%">
-        <p>
-        <b>The Use of Generative Search Engines for Knowledge Work and Complex Tasks.</b> <br>
-        Siddharth Suri, Scott Counts, Leijie Wang, <b>Chacha Chen</b>, Mengting Wan, Tara Safavi, Jennifer Neville, Chirag Shah, Ryen W. White, Reid Andersen, Georg Buscher, Sathish Manivannan, Nagu Rangan, Longqi Yang.<br>
-         <!-- In Proceedings of the 11th International Conference on Learning Representations <b>(ICLR 2023)</b><br> -->
-        <i>An empirical analysis of large-scale user interactions with Bing Chat, a GPT-4 backed generative search engine.
-        </i><br>
-        [<a href="https://arxiv.org/abs/2404.04268">Paper</a>]
-        </p>
-        </td>
-        </tr>
-
-        <tr>
-        <td width="100%">
-        <p>
-        <b> Machine Explanations and Human Understanding</b> <br>
-        <b>Chacha Chen*</b>, Shi Feng*, Amit Sharma, Chenhao Tan<br>
-        <b>FAccT 2023</b>, <b>TMLR 2023</b>, and <span style="color:#20B2AA  ;"> <b>best paper at HMCaT @ ICML 2022</b></span><br>
-        [<a href="https://arxiv.org/abs/2202.04092">Paper</a>]
-        [<a href="papers/Paper_3.pdf">Slides</a>]
-        [<a href="https://www.youtube.com/watch?v=-hNKPaX7L4o">Video</a>]<br>
-        [<a href="https://github.com/Chacha-Chen/Explanations-Human-Studies">Machine Explanations Human Studies Literature Survey</a>]
-        </p>
-        </td>
-    </tr>
-        <tr>
-        <td width="100%">
-        <p>
-        <b>  Towards a Science of Human-AI Decision Making: A Survey of Empirical Studies</b> <br>
-        Vivian Lai, <b>Chacha Chen</b>, Q. Vera Liao, Alison Smith-Renner, Chenhao Tan<br>
-        <b>FAccT 2023</b><br>
-        [<a href="https://arxiv.org/abs/2112.11471">Paper</a>]
-        [<a href="papers/paper_567.pdf">Slides</a>]
-        [<a href="https://haidecisionmaking.github.io">Survey Website</a>]
-        </p>
-        </td>
-    </tr>
-
-        <tr>
-        <td width="100%">
-        <p>
-        <b>  Learning Human-Compatible Representations for Case-Based Decision Support.</b> <br>
-         Han Liu, Yizhou Tian, <b>Chacha Chen</b>, Shi Feng, Yuxin Chen, Chenhao Tan.<br>
-         <i>Proceedings of the 11th International Conference on Learning Representations</i> <b>(ICLR 2023)</b><br>
-        [<a href="https://aclanthology.org/2022.acl-long.441.pdf">Paper</a>]
-        </p>
-        </td>
-        </tr>
+            <div class="publication-section">
+                <h2>🤝 Human-AI Collaboration</h2>
+                <div class="publication-item">
+                    <span class="publication-title">Human-AI Decision Making with Domain Experts: A Case Study on AI-Assisted Prostate Cancer MRI Diagnosis</span><br>
+                    <b>Chacha Chen</b>, Han Liu, Jiamin Yang, Benjamin M. Mervak, Bora Kalaycioglu, Grace Lee, Emre Cakmakli, Matteo Bonatti, Sridhar Pudu, Osman Kahraman, Gul Gizem Pamuk, Aytekin Oto, Aritrick Chatterjee, Chenhao Tan.<br>
+                    <a href="https://arxiv.org/abs/2502.03482">[Preprint]</a>
+                </div>
+                <div class="publication-item">
+                    <span class="publication-title">Machine Explanations and Human Understanding</span><br>
+                    <b>Chacha Chen*</b>, Shi Feng*, Amit Sharma, Chenhao Tan.<br>
+                    <i><b>FAccT 2023</b>, <b>TMLR 2023</b>, and <span style="color:#20B2AA  ;"> <b>Best Paper at HMCaT @ ICML 2022</b></span></i><br>
+                    [<a href="https://arxiv.org/abs/2202.04092">Paper</a>]
+                    [<a href="papers/Paper_3.pdf">Slides</a>]
+                    [<a href="https://www.youtube.com/watch?v=-hNKPaX7L4o">Video</a>]<br>
+                    [<a href="https://github.com/Chacha-Chen/Explanations-Human-Studies">Machine Explanations Human Studies Literature Survey</a>]
+                    <!-- <i>FAccT 2023, TMLR 2023, Best Paper at HMCaT @ ICML 2022.</i> <a href="https://arxiv.org/abs/2202.04092">[Paper]</a> -->
+                </div>
+                <div class="publication-item">
+                    <span class="publication-title">Towards a Science of Human-AI Decision Making: A Survey of Empirical Studies</span><br>
+                    Vivian Lai, <b>Chacha Chen</b>, Q. Vera Liao, Alison Smith-Renner, Chenhao Tan.<br>
+                    <i><b>FAccT 2023</b>.</i> <a href="https://arxiv.org/abs/2112.11471">[Paper]</a> <a href="papers/paper_567.pdf">[Slides]</a> <a href="https://haidecisionmaking.github.io">[Survey Website]</a>
+                </div>
+                <div class="publication-item">
+                  <span class="publication-title">Learning Human-Compatible Representations for Case-Based Decision Support.</span><br>
+                  Han Liu, Yizhou Tian, <b>Chacha Chen</b>, Shi Feng, Yuxin Chen, Chenhao Tan.<br>
+                  <i><b>ICLR 2023</b>.</i> <a href="https://aclanthology.org/2022.acl-long.441.pdf">[Paper]</a>
+              </div>
 
 
+            </div>
+            <div class="publication-section">
+                <h2>🛠️ Applied Machine Learning</h2>
+                <div class="publication-item">
+                <span class="publication-title">UNITE: Uncertainty-based Health Risk Prediction Leveraging Multi-sourced Data</span><br>
+                <b>Chacha Chen</b>, Junjie Liang, Fenglong Ma, Lucas Glass, Jimeng Sun, Cao Xiao.<br>
+                <!-- Proceedings of the Web Conference (WWW 2021) -->
+                <i><b>WWW 2021</b>.</i> <a href="https://arxiv.org/abs/2010.11389">[Paper]</a> <a href="https://docs.google.com/presentation/d/1foV39S9HKyTTJkN9udOR4NSZCk3C0ov8K9KuxxpK_ws/edit?usp=sharing">[Slides]</a>
+            </div>
+
+            <div class="publication-item">
+                <span class="publication-title">Toward a Thousand Lights: Decentralized Deep Reinforcement Learning for Large-Scale Traffic Signal Control</span><br>
+                <b>Chacha Chen</b>, Hua Wei, Nan Xu, Guanjie Zheng, Ming Yang, Yuanhao Xiong, Kai Xu, Zhenhui Li.<br>
+                <i><b>AAAI 2020</b>.</i> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5744">[Paper]</a>
+            </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+            <!-- Publications Section -->
+            <!-- <h2 class="section-title">Selected Publications <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">(Full List)</a></h2>
+            <div class="publications">
+            </div> -->
+
+        <!--  <table id="tbPublications" width="100%">
+
+              <tr>
+                <td width="100%">
+                <p>
+                <b>Human-AI Decision Making with Domain Experts: A Case Study on AI-Assisted Prostate Cancer MRI Diagnosis</b> <br>
+                <b>Chacha Chen</b>, Han Liu, Jiamin Yang, Benjamin M. Mervak, Bora Kalaycioglu, Grace Lee, Emre Cakmakli, Matteo Bonatti, Sridhar Pudu, Osman Kahraman, Gul Gizem Pamuk, Aytekin Oto, Aritrick Chatterjee, Chenhao Tan.<br>
+                [<a href="https://arxiv.org/abs/2502.03482">Preprint</a>] 
+                </p>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td width="100%">
+                <p>
+                <b>GPT-4V Cannot Generate Radiology Report Yet</b> <br>
+                Yuyang Jiang*, <b>Chacha Chen*</b>, Dang Nguyen, Benjamin M. Mervak, Chenhao Tan.<br>
+                <i>Findings of Machine Learning for Health <b>(ML4H 2024)</b> and findings of <b>NAACL 2025</b>.
+                </i><br>
+                [<a href="https://www.arxiv.org/abs/2407.12176">Paper</a>]
+                [<a href="papers/rrp_eval.pdf">Slides</a>] 
+                </p>
+                </td>
+                </tr>
+
+            <tr>
+                <td width="100%">
+                <p>
+                <b>The Use of Generative Search Engines for Knowledge Work and Complex Tasks.</b> <br>
+                Siddharth Suri, Scott Counts, Leijie Wang, <b>Chacha Chen</b>, Mengting Wan, Tara Safavi, Jennifer Neville, Chirag Shah, Ryen W. White, Reid Andersen, Georg Buscher, Sathish Manivannan, Nagu Rangan, Longqi Yang.<br>
+                <i>An empirical analysis of large-scale user interactions with Bing Chat, a GPT-4 backed generative search engine.
+                </i><br>
+                [<a href="https://arxiv.org/abs/2404.04268">Paper</a>]
+                </p>
+                </td>
+                </tr>
+
+                <tr>
+                <td width="100%">
+                <p>
+                <b> Machine Explanations and Human Understanding</b> <br>
+                <b>Chacha Chen*</b>, Shi Feng*, Amit Sharma, Chenhao Tan<br>
+                <b>FAccT 2023</b>, <b>TMLR 2023</b>, and <span style="color:#20B2AA  ;"> <b>best paper at HMCaT @ ICML 2022</b></span><br>
+                [<a href="https://arxiv.org/abs/2202.04092">Paper</a>]
+                [<a href="papers/Paper_3.pdf">Slides</a>]
+                [<a href="https://www.youtube.com/watch?v=-hNKPaX7L4o">Video</a>]<br>
+                [<a href="https://github.com/Chacha-Chen/Explanations-Human-Studies">Machine Explanations Human Studies Literature Survey</a>]
+                </p>
+                </td>
+            </tr>
+                <tr>
+                <td width="100%">
+                <p>
+                <b>  Towards a Science of Human-AI Decision Making: A Survey of Empirical Studies</b> <br>
+                Vivian Lai, <b>Chacha Chen</b>, Q. Vera Liao, Alison Smith-Renner, Chenhao Tan<br>
+                <b>FAccT 2023</b><br>
+                [<a href="https://arxiv.org/abs/2112.11471">Paper</a>]
+                [<a href="papers/paper_567.pdf">Slides</a>]
+                [<a href="https://haidecisionmaking.github.io">Survey Website</a>]
+                </p>
+                </td>
+            </tr>
+
+                <tr>
+                <td width="100%">
+                <p>
+                <b>  Learning Human-Compatible Representations for Case-Based Decision Support.</b> <br>
+                 Han Liu, Yizhou Tian, <b>Chacha Chen</b>, Shi Feng, Yuxin Chen, Chenhao Tan.<br>
+                 <i>Proceedings of the 11th International Conference on Learning Representations</i> <b>(ICLR 2023)</b><br>
+                [<a href="https://aclanthology.org/2022.acl-long.441.pdf">Paper</a>]
+                </p>
+                </td>
+                </tr>
+
+ -->
 <!--         <tr>
         <td width="100%">
         <p>
@@ -258,7 +344,7 @@
     </tr> -->
 
 
-        <tr>
+<!--         <tr>
         <td width="100%">
         <p>
               <b>  UNITE: Uncertainty-based Health Risk Prediction Leveraging Multi-sourced Data</b> <br>
@@ -279,7 +365,7 @@
       [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/5744">Paper</a>] 
       </p>
       </td>
-  </tr>
+  </tr> -->
 
     </table>
 
