@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Chacha Chen's Homepage">
-    <meta name="keywords" content="Chacha Chen, CS, University of Chicago, Human Computer Interaction, Machine Learning">
+    <meta name="keywords" content="Chacha Chen, CS, University of Chicago, NLP, Human Computer Interaction, Machine Learning">
     <title>Chacha Chen</title>
     
     <!-- Bulma CSS Framework -->
@@ -178,13 +178,13 @@
 
             <!-- Research Focus Section -->
             <h2 class="section-title">Research Focus</h2>
-            <ul class="passion-list">
-                <li>Understanding and improving LLMs for specialized tasks such as radiology and knowledge-intensive tasks</li>
-                <!-- Multimodal Large Language Model (LLM) Evaluation and Post-training for Healthcare</li> -->
-                <li>Human-AI collaboration</li>
-            </ul>
             <p>I am passionate about putting humans at the center of AI development, including how to understand the process of human-AI interaction and how we can better build/deploy AI tools that can actually be useful in real-world settings.</p>
-            <!-- , especially in medical contexts.</p> -->
+            
+            <p><strong>Human-AI collaboration dynamics:</strong> My work showed that effective collaboration requires accounting for human domain expertise, you can't just deploy AI and expect complementarity. I found laypeople <strong>over-rely</strong> on AI while experts <strong>under-rely</strong>. I'm exploring how <em>personalized</em>  AI systems can dynamically calibrate their role in the collaboration, adjusting not just to expertise level but to individual working styles, task contexts, and evolving user needs to achieve genuine complementarity.</em></p>
+            
+            <p><strong>Improving AI in expert domains where capability still falls short:</strong> As AI has become capable in general domains, the natural next frontier is expert domains like medical diagnosis and scientific discovery where current systems still fall short. I study frontier models on highly specialized tasks to understand where they break and how we can improve models for these domains. </p>
+            
+            <p><strong>Calibration and uncertainty communication:</strong> Capability isn't the bottleneck anymore, calibration is. For AI to work effectively and collaboratively with humans, systems must communicate what they don't know. I'm building information-theoretic frameworks for LLM calibration and collaborative decision making, enabling genuine complementarity where humans and AI can both contribute meaningfully.</p>
 
             
         <br>
@@ -197,6 +197,7 @@
                 <div class="publication-item">
                     <span class="publication-title">GPT-4V Cannot Generate Radiology Report Yet</span><br>
                     Yuyang Jiang*, <b>Chacha Chen*</b>, Dang Nguyen, Benjamin M. Mervak, Chenhao Tan.<br>
+                    <i>We systematically evaluate GPT-4V's ability to generate radiology reports and identify key limitations in clinical reasoning and structured reporting.</i><br>
                     <i><b>ML4H 2024, NAACL 2025</b>.</i> <a href="https://www.arxiv.org/abs/2407.12176">[Paper]</a> 
                 </div>
                 <div class="publication-item">
@@ -211,7 +212,9 @@
                 <h2>Human-AI Collaboration</h2>
                 <div class="publication-item">
                     <span class="publication-title">Can Domain Experts Rely on AI Appropriately? A Case Study on AI-Assisted Prostate Cancer MRI Diagnosis</span><br>
-                    <b>Chacha Chen</b>, Han Liu, Ziyang Guo, Jiamin Yang, Benjamin M. Mervak, Bora Kalaycioglu, Grace Lee, Emre Cakmakli, Matteo Bonatti, Sridhar Pudu, Osman Kahraman, Gul Gizem Pamuk, Aytekin Oto, Aritrick Chatterjee, Jessica Hullman, Chenhao Tan.<br> <i><b>FAccT 2025</b></i>
+                    <b>Chacha Chen</b>, Han Liu, Ziyang Guo, Jiamin Yang, Benjamin M. Mervak, Bora Kalaycioglu, Grace Lee, Emre Cakmakli, Matteo Bonatti, Sridhar Pudu, Osman Kahraman, Gul Gizem Pamuk, Aytekin Oto, Aritrick Chatterjee, Jessica Hullman, Chenhao Tan.<br>
+                    <i>We find that radiologists under-rely on AI assistance in prostate cancer diagnosis, missing opportunities for improved accuracy even when AI predictions are correct.</i><br>
+                    <i><b>FAccT 2025</b></i>
                     <a href="https://arxiv.org/abs/2502.03482">[Paper]</a>
                 </div>
                 <div class="publication-item">
@@ -227,11 +230,13 @@
                 <div class="publication-item">
                     <span class="publication-title">Towards a Science of Human-AI Decision Making: A Survey of Empirical Studies</span><br>
                     Vivian Lai, <b>Chacha Chen</b>, Q. Vera Liao, Alison Smith-Renner, Chenhao Tan.<br>
+                    <i>A comprehensive survey of 100+ papers on human-AI decision making, identifying key factors and proposing a framework for future research.</i><br>
                     <i><b>FAccT 2023</b>.</i> <a href="https://arxiv.org/abs/2112.11471">[Paper]</a> <a href="papers/paper_567.pdf">[Slides]</a> <a href="https://haidecisionmaking.github.io">[Survey Website]</a>
                 </div>
                 <div class="publication-item">
                   <span class="publication-title">Learning Human-Compatible Representations for Case-Based Decision Support.</span><br>
                   Han Liu, Yizhou Tian, <b>Chacha Chen</b>, Shi Feng, Yuxin Chen, Chenhao Tan.<br>
+                  <i>We develop a method to learn case representations that align with human similarity judgments for more effective AI-assisted decision support.</i><br>
                   <i><b>ICLR 2023</b>.</i> <a href="https://aclanthology.org/2022.acl-long.441.pdf">[Paper]</a>
               </div>
 
@@ -242,6 +247,7 @@
                 <div class="publication-item">
                 <span class="publication-title">UNITE: Uncertainty-based Health Risk Prediction Leveraging Multi-sourced Data</span><br>
                 <b>Chacha Chen</b>, Junjie Liang, Fenglong Ma, Lucas Glass, Jimeng Sun, Cao Xiao.<br>
+                <i>A framework for health risk prediction that quantifies uncertainty when integrating multiple data sources like claims and lab results.</i><br>
                 <!-- Proceedings of the Web Conference (WWW 2021) -->
                 <i><b>WWW 2021</b>.</i> <a href="https://arxiv.org/abs/2010.11389">[Paper]</a> <a href="https://docs.google.com/presentation/d/1foV39S9HKyTTJkN9udOR4NSZCk3C0ov8K9KuxxpK_ws/edit?usp=sharing">[Slides]</a>
             </div>
@@ -249,6 +255,7 @@
             <div class="publication-item">
                 <span class="publication-title">Toward a Thousand Lights: Decentralized Deep Reinforcement Learning for Large-Scale Traffic Signal Control</span><br>
                 <b>Chacha Chen</b>, Hua Wei, Nan Xu, Guanjie Zheng, Ming Yang, Yuanhao Xiong, Kai Xu, Zhenhui Li.<br>
+                <i>A scalable decentralized reinforcement learning approach for coordinating traffic signals across large urban networks.</i><br>
                 <i><b>AAAI 2020</b>.</i> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5744">[Paper]</a>
             </div>
 
@@ -377,10 +384,17 @@
   </tr> -->
 
     </table>
-
-
             <h2 class="section-title">Experience</h2>
             <div class="experience-items">
+                <div class="experience-item">
+                    <div class="experience-details">
+                        <p>Apple, AIML</p>
+                        <p>Research Residency, 2025-now</p>
+                    </div>
+                    <div class="experience-logo">
+                        <img src="pic/Apple-Logo.png" alt="Apple logo">
+                    </div>
+                </div>
                 <div class="experience-item">
                     <div class="experience-details">
                         <p>Microsoft Research, Redmond, WA, US</p>
