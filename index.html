@@ -67,7 +67,7 @@
         margin-bottom: 3rem;
       }
       .profile-image {
-        max-width: 340px;
+        max-width: 250px;
         border-radius: 4px;
         transition: transform 0.3s ease;
       }
@@ -78,9 +78,13 @@
 /*        margin-top: 1.5rem;*/
       }
       .social-links a {
-        margin-right: 1.5rem;
+        margin-right: 1rem;
 /*        color: #4a4a4a;*/
         text-decoration: none;
+        font-size: 0.85rem;
+      }
+      .social-links a i {
+        font-size: 0.9em;
       }
       .social-links a:hover {
         color: #3273dc;
@@ -180,11 +184,14 @@
             <h2 class="section-title">Research Focus</h2>
             <p>I am passionate about putting humans at the center of AI development, including how to understand the process of human-AI interaction and how we can better build/deploy AI tools that can actually be useful in real-world settings.</p>
             
-            <p><strong>Human-AI collaboration dynamics:</strong> My work showed that effective collaboration requires accounting for human domain expertise, you can't just deploy AI and expect complementarity. I found laypeople <strong>over-rely</strong> on AI while experts <strong>under-rely</strong>. I'm exploring how <em>personalized</em>  AI systems can dynamically calibrate their role in the collaboration, adjusting not just to expertise level but to individual working styles, task contexts, and evolving user needs to achieve genuine complementarity.</em></p>
             
-            <p><strong>Improving AI in expert domains where capability still falls short:</strong> As AI has become capable in general domains, the natural next frontier is expert domains like medical diagnosis and scientific discovery where current systems still fall short. I study frontier models on highly specialized tasks to understand where they break and how we can improve models for these domains. </p>
+            <p><strong>Improving AI in expert domains where capability still falls short:</strong> As AI has become capable in general domains, the natural next frontier is expert domains like medical diagnosis and scientific discovery where current systems still fall short. I study frontier models on highly specialized tasks to understand where they break and how we can improve models for these domains. One research direction is to study how LLMs process information and whether they update their belief accordingly to the evidence strength.</p>
+              <!-- ,/we empirically finds they don't update beliefs proportionally to the evidence strength, instead overreacting to weak signals and showing poor calibration in high-stakes reasoning tasks. </p> -->
             
             <p><strong>Calibration and uncertainty communication:</strong> Capability isn't the bottleneck anymore, calibration is. For AI to work effectively and collaboratively with humans, systems must communicate what they don't know. I'm building information-theoretic frameworks for LLM calibration and collaborative decision making, enabling genuine complementarity where humans and AI can both contribute meaningfully.</p>
+            
+            <p><strong>Human-AI collaboration dynamics:</strong> My work showed that effective collaboration requires accounting for human domain expertise, you can't just deploy AI and expect complementarity. I found laypeople <strong>over-rely</strong> on AI while experts <strong>under-rely</strong>. I'm exploring how <em>personalized</em>  AI systems can dynamically calibrate their role in the collaboration, adjusting not just to expertise level but to individual working styles, task contexts, and evolving user needs to achieve genuine complementarity.</em></p>
+
 
             
         <br>
@@ -193,10 +200,14 @@
             <h1 class="title">Selected Publications <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">(Full List)</a></h1>
 
             <div class="publication-section">
-                <h2>LLMs in Expert Domains</h2>
+                <div class="publication-item">
+                    <span class="publication-title">Collaborative Disagreement Resolution for Scalable Oversight</span><br>
+                    Yuyang Jiang*‡, <b>Chacha Chen*</b>, Teng Wu, Liwen Sun, Han Liu, Shi Feng and Chenhao Tan.<br>
+                    <i>Disagreement Resolution improves scalable oversight by shifting the interaction mechanism from adversarial debate to collaborative truth-seeking.</i><br> 
+                </div>
                 <div class="publication-item">
                     <span class="publication-title">GPT-4V Cannot Generate Radiology Report Yet</span><br>
-                    Yuyang Jiang*, <b>Chacha Chen*</b>, Dang Nguyen, Benjamin M. Mervak, Chenhao Tan.<br>
+                    Yuyang Jiang*‡, <b>Chacha Chen*</b>, Dang Nguyen, Benjamin M. Mervak, Chenhao Tan.<br>
                     <i>We systematically evaluate GPT-4V's ability to generate radiology reports and identify key limitations in clinical reasoning and structured reporting.</i><br>
                     <i><b>ML4H 2024, NAACL 2025</b>.</i> <a href="https://www.arxiv.org/abs/2407.12176">[Paper]</a> 
                 </div>
@@ -206,10 +217,11 @@
                     <i>An empirical analysis of large-scale user interactions with Bing Chat, a GPT-4 backed generative search engine.</i><br>
                     <a href="https://arxiv.org/abs/2404.04268">[Preprint]</a>
                 </div>
-            </div>
-
-            <div class="publication-section">
-                <h2>Human-AI Collaboration</h2>
+                <div class="publication-item">
+                    <span class="publication-title">Tutorial: Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey</span><br>
+                    Xiaoou Liu, Tiejin Chen, Longchao Da, <b>Chacha Chen</b>, Zhen Lin, Hua Wei.<br>
+                    <i><b>KDD 2025</b>.</i> <a href="https://dl.acm.org/doi/10.1145/3711896.3736569">[Paper]</a> <a href="https://xiao0o0o.github.io/2025KDD_tutorial/">[Tutorial Website]</a>
+                </div>
                 <div class="publication-item">
                     <span class="publication-title">Can Domain Experts Rely on AI Appropriately? A Case Study on AI-Assisted Prostate Cancer MRI Diagnosis</span><br>
                     <b>Chacha Chen</b>, Han Liu, Ziyang Guo, Jiamin Yang, Benjamin M. Mervak, Bora Kalaycioglu, Grace Lee, Emre Cakmakli, Matteo Bonatti, Sridhar Pudu, Osman Kahraman, Gul Gizem Pamuk, Aytekin Oto, Aritrick Chatterjee, Jessica Hullman, Chenhao Tan.<br>
@@ -239,11 +251,6 @@
                   <i>We develop a method to learn case representations that align with human similarity judgments for more effective AI-assisted decision support.</i><br>
                   <i><b>ICLR 2023</b>.</i> <a href="https://aclanthology.org/2022.acl-long.441.pdf">[Paper]</a>
               </div>
-
-
-            </div>
-            <div class="publication-section">
-                <h2>Applied Machine Learning</h2>
                 <div class="publication-item">
                 <span class="publication-title">UNITE: Uncertainty-based Health Risk Prediction Leveraging Multi-sourced Data</span><br>
                 <b>Chacha Chen</b>, Junjie Liang, Fenglong Ma, Lucas Glass, Jimeng Sun, Cao Xiao.<br>
@@ -258,7 +265,7 @@
                 <i>A scalable decentralized reinforcement learning approach for coordinating traffic signals across large urban networks.</i><br>
                 <i><b>AAAI 2020</b>.</i> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5744">[Paper]</a>
             </div>
-
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;"><i>* Equal contribution &nbsp;&nbsp; ‡ Student mentored by me</i></p>
             </div>
 
 
@@ -388,7 +395,7 @@
             <div class="experience-items">
                 <div class="experience-item">
                     <div class="experience-details">
-                        <p>Apple, AIML</p>
+                        <p>Apple, AIML, Seattle, WA, US</p>
                         <p>Research Residency, 2025-now</p>
                     </div>
                     <div class="experience-logo">
@@ -423,7 +430,7 @@
                         <p>Machine Learning Research Intern, Summer 2020</p>
                     </div>
                     <div class="experience-logo">
-                        <img src="pic/IQVIA-LOGO.png" alt="Microsoft Research logo">
+                        <img src="pic/IQVIA-LOGO.png" alt="Microsoft Research logo" style="max-height: 40px;">
                     </div>
                 </div>
             </div>
