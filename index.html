@@ -22,6 +22,23 @@
         line-height: 1.5;
         color: #4a4a4a;
       }
+      body > .section {
+        max-width: 920px;
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        box-sizing: border-box;
+      }
+      .section > .container,
+      .section .container {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+      }
       
       /* Rest of your styles... */
         .publication-section {
@@ -63,25 +80,37 @@
       .profile-section {
         display: flex;
         align-items: flex-start;
-        gap: 3rem;
+        gap: 1.5rem;
         margin-bottom: 3rem;
       }
+      .profile-image-container {
+        flex: 0 0 220px;
+      }
       .profile-image {
-        max-width: 250px;
+        width: 100%;
+        max-width: 220px;
         border-radius: 4px;
         transition: transform 0.3s ease;
+      }
+      .content {
+        flex: 1;
+        min-width: 0;
       }
       .profile-image:hover {
         cursor: pointer;
       }
       .social-links {
-/*        margin-top: 1.5rem;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: nowrap;
+        white-space: nowrap;
       }
       .social-links a {
-        margin-right: 1rem;
 /*        color: #4a4a4a;*/
         text-decoration: none;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
       }
       .social-links a i {
         font-size: 0.9em;
@@ -107,6 +136,9 @@
         margin-bottom: 1rem;
         font-weight: 600;
       }
+      .publications-block {
+        margin-top: 1.25rem;
+      }
       
       /* Simplified styles to match Victor's cleaner look */
 /*      .publication-item {
@@ -126,6 +158,10 @@
       }
       
       @media screen and (max-width: 768px) {
+        body > .section {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
         .profile-section {
           flex-direction: column;
           align-items: center;
@@ -172,13 +208,11 @@
               <p>Email: <a href="mailto:chacha@uchicago.edu">chacha@uchicago.edu</a><br>
             </div>
             
-            <p>I am a Member of Technical Staff at Microsoft AI (Superintelligence Team). Before that, I graduated from the <a href="https://chicagohai.github.io/">UChicago Human+AI Lab</a>, where I worked with <a href="https://chenhaot.com/">Chenhao Tan</a>. I received undergraduate degrees from Shanghai Jiao Tong University.</p>
+            <p>I am a member of the technical staff at Microsoft AI on the Super Intelligence team. Before that, I graduated from the <a href="https://chicagohai.github.io/">UChicago Human+AI Lab</a>, where I worked with <a href="https://chenhaot.com/">Chenhao Tan</a>. I received undergraduate degrees from Shanghai Jiao Tong&nbsp;University.</p>
+          </div>
+        </div>
 
-
-            
-        <br>
-
-        <div class="container">
+        <div class="publications-block">
             <h1 class="title">Selected Publications <a href="https://scholar.google.com/citations?user=X1c-e4oAAAAJ&hl=en">(Full List)</a></h1>
 
             <div class="publication-section">
@@ -256,10 +290,6 @@
                 <i><b>AAAI 2020</b>.</i> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5744">[Paper]</a>
             </div>
                 <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;"><i>* Equal contribution &nbsp;&nbsp; ‡ Student mentored by me</i></p>
-            </div>
-
-
-
         </div>
 
 
